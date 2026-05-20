@@ -60,7 +60,7 @@ function HeroAnimation() {
               src="img/Hero/AlexanderVasquezv2.png"
               alt="Alexander Vasquez" class="Developer"
             />
-      <FloatingCard icon="ri-code-s-slash-fill" title="Frontend Developer" top="10%" left="-10%" />
+      <FloatingCard icon="ri-code-s-slash-fill" title="Frontend Developer" top="10%" left="-20%" />
       <FloatingCard icon="ri-reactjs-line" title="React UI" top="70%" left="70%" />
     </div>
   );

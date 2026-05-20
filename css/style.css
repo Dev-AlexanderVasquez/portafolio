@@ -1201,6 +1201,12 @@ footer {
     pointer-events:auto;
     transform:translateY(0);
   } 
+
+  .animation-wrapper {
+    width: 280px;   /* Bajamos de 420px a 280px para que entre en cualquier celular */
+    height: 280px;
+    margin: 0 auto; /* Lo centramos en la pantalla */
+  }  
   
   .Developer{
     width: 130%;
