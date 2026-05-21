@@ -265,6 +265,9 @@ body{
 .Developer{
   width: 140%;
 }
+.Developer2{
+  width: 140%;
+}
 
 /* ABOUT */
 
@@ -1211,6 +1214,10 @@ footer {
   .Developer{
     width: 130%;
   }
+  .Developer2{
+    width: 100%;
+  }
+
   .hero h1{
     font-size:3.5rem;
   }

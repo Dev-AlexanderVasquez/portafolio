@@ -58,7 +58,7 @@ function HeroAnimation() {
       <div className="glow-circle" style={{ transform: `rotate(${rotation}deg)` }}></div>
       <img
               src="img/Hero/projecthero.png"
-              alt="Alexander Vasquez" class="Developer"
+              alt="Alexander Vasquez" class="Developer2"
             />
       <FloatingCard icon="ri-code-s-slash-fill" title="Frontend Developer" top="10%" left="-20%" />
       <FloatingCard icon="ri-reactjs-line" title="React UI" top="70%" left="70%" />
