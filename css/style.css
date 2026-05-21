@@ -1218,8 +1218,9 @@ footer {
     width: 100%;
   }
 
-  .hero h1{
-    font-size:3.5rem;
+ .hero h1{
+    font-size: 2.6rem; 
+    line-height: 1.2;
   }
 
   .about-grid,
@@ -1262,8 +1263,7 @@ footer {
     gap: 15px;
     text-align: center;
     padding: 25px;
-  }
-  
+  }  
   .scroll-top-btn {
     bottom: 20px;
     right: 20px;
@@ -1274,12 +1274,38 @@ footer {
 }
 
 @media(max-width: 480px) {
+  .animation-wrapper {
+    width: 240px;   
+    height: 280px;
+    margin: 0 auto; 
+  } 
   .stats-container {
     grid-template-columns: 1fr;
   }
-   .skills-container {
-    grid-template-columns: 1fr; /* 1 sola columna en móviles */
+  .skills-container {
+    grid-template-columns: 1fr; 
+  } 
+}
+
+@media(max-width: 393px) {
+  .animation-wrapper {
+    width: 210px;   
+    height: 280px;
+    margin: 0 auto; 
+  }    
+  .Developer{
+    width: 120%;
+  }
+  .Developer2{
+    width: 100%;
+  }    
+  .hero h1 {
+    font-size: 2.3rem; 
   }  
+  .hero-buttons {
+    flex-direction: column;
+    gap: 12px;
+  } 
 }
 
 
