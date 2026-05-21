@@ -3,20 +3,20 @@
   padding:0;
   box-sizing:border-box;
 }
-
+ 
 html{
   scroll-behavior:smooth;
 }
-
+ 
 body{
   font-family:'Inter',sans-serif;
   background:#050816;
   color:white;
   overflow-x:hidden;
 }
-
+ 
 /* BACKGROUND */
-
+ 
 .background-glow{
   position:fixed;
   inset:0;
@@ -25,77 +25,77 @@ body{
     radial-gradient(circle at bottom right,#2563eb33,transparent 30%);
   z-index:-1;
 }
-
+ 
 /* GENERAL */
-
+ 
 .container{
   width:90%;
   max-width:1200px;
   margin:auto;
 }
-
+ 
 .section{
   margin-top:120px;
 }
-
+ 
 .section-title{
   display:flex;
   align-items:center;
   gap:12px;
   margin-bottom:40px;
 }
-
+ 
 .section-title span{
   width:10px;
   height:10px;
   background:#7c3aed;
   border-radius:50%;
 }
-
+ 
 .section-title h2{
   font-size:2rem;
 }
-
+ 
 /* NAVBAR */
-
+ 
 .navbar{
   width:90%;
   max-width:1200px;
   margin:20px auto;
   padding:18px 30px;
-
+ 
   display:flex;
   align-items:center;
   justify-content:space-between;
-
+ 
   position:sticky;
   top:20px;
-
+ 
   background:rgba(255,255,255,0.03);
-
+ 
   border:1px solid rgba(255,255,255,0.08);
-
+ 
   backdrop-filter:blur(15px);
-
+ 
   border-radius:20px;
-
+ 
   z-index:999;
 }
-
+ 
 .logo{
   font-size:2rem;
   font-weight:900;
 }
-
+ 
 .logo span{
   color:#8b5cf6;
 }
-
+ 
 .nav-links {
   display: flex;
   gap: 30px;
 }
-
+ 
 .nav-links a {
   color: #cbd5e1;
   text-decoration: none;
@@ -105,12 +105,12 @@ body{
   position: relative; /* Necesario para posicionar la línea debajo */
   transition: color .3s ease;
 }
-
+ 
 .nav-links a:hover,
 .nav-links a.active {
   color: white;
 }
-
+ 
 /* La línea con degradado usando un pseudoelemento */
 .nav-links a::after {
   content: '';
@@ -125,85 +125,85 @@ body{
   transform-origin: right;
   transition: transform 0.3s ease;
 }
-
+ 
 /* Muestra la línea expandiéndola desde el centro/izquierda cuando está activo o en hover */
 .nav-links a:hover::after,
 .nav-links a.active::after {
   transform: scaleX(1);
   transform-origin: left;
 }
-
+ 
 .cv-btn{
   text-decoration:none;
   color:white;
-
+ 
   padding:12px 20px;
-
+ 
   background:linear-gradient(90deg,#7c3aed,#2563eb);
-
+ 
   border-radius:12px;
 }
-
+ 
 .menu-btn{
   display:none;
 }
-
+ 
 /* HERO */
-
+ 
 .hero{
   min-height:100vh;
-
+ 
   display:grid;
   grid-template-columns:1fr 1fr;
   align-items:center;
-
+ 
   gap:60px;
 }
-
+ 
 .badge{
   display:inline-block;
-
+ 
   padding:10px 18px;
-
+ 
   border:1px solid rgba(255,255,255,0.1);
-
+ 
   border-radius:30px;
-
+ 
   margin-bottom:20px;
-
+ 
   background:rgba(255,255,255,0.03);
 }
-
+ 
 .hero h1{
   font-size:5rem;
   line-height:1.1;
 }
-
+ 
 .hero h1 span{
   background:linear-gradient(90deg,#8b5cf6,#3b82f6);
   -webkit-background-clip:text;
   -webkit-text-fill-color:transparent;
 }
-
+ 
 .hero h3{
   margin-top:20px;
   color:#8b5cf6;
   font-size:1.5rem;
 }
-
+ 
 .hero p{
   margin-top:20px;
   color:#cbd5e1;
   line-height:1.8;
   max-width:500px;
 }
-
+ 
 .hero-buttons{
   display:flex;
   gap:20px;
   margin-top:35px;
 }
-
+ 
 .primary-btn,
 .secondary-btn{
   padding:15px 25px;
@@ -211,66 +211,66 @@ body{
   text-decoration:none;
   transition:.3s;
 }
-
+ 
 .primary-btn{
   background:linear-gradient(90deg,#8b5cf6,#3b82f6);
   color:white;
 }
-
+ 
 .secondary-btn{
   border:1px solid rgba(255,255,255,0.1);
   color:white;
 }
-
+ 
 .primary-btn:hover,
 .secondary-btn:hover{
   transform:translateY(-5px);
 }
-
+ 
 .socials{
   display:flex;
   gap:20px;
   margin-top:30px;
 }
-
+ 
 .socials a{
   width:45px;
   height:45px;
-
+ 
   display:flex;
   align-items:center;
   justify-content:center;
-
+ 
   border-radius:50%;
-
+ 
   background:rgba(255,255,255,0.05);
-
+ 
   color:white;
-
+ 
   text-decoration:none;
-
+ 
   transition:.3s;
 }
-
+ 
 .socials a:hover{
   transform:translateY(-5px);
   background:#7c3aed;
 }
-
+ 
 .hero-right{
   display:flex;
   justify-content:center;
 }
-
+ 
 .Developer{
   width: 140%;
 }
 .Developer2{
   width: 140%;
 }
-
+ 
 /* ABOUT */
-
+ 
 .about-card-wrapper {
   background: rgba(255, 255, 255, 0.02);
   border: 1px solid rgba(255, 255, 255, 0.05);
@@ -281,7 +281,7 @@ body{
   gap: 50px;
   backdrop-filter: blur(10px);
 }
-
+ 
 /* Columna Izquierda */
 .about-left-col {
   display: flex;
@@ -291,18 +291,18 @@ body{
   border-right: 1px solid rgba(255, 255, 255, 0.1);
   padding-right: 40px;
 }
-
+ 
 .about-left-col .section-title {
   margin-bottom: 25px;
 }
-
+ 
 .about-text p {
   line-height: 1.7;
   color: #cbd5e1;
   font-size: 0.95rem;
   margin-bottom: 20px;
 }
-
+ 
 /* Botón "Más sobre mí" */
 .more-about-btn {
   display: inline-flex;
@@ -318,21 +318,21 @@ body{
   transition: .3s ease;
   margin-top: 10px;
 }
-
+ 
 .more-about-btn:hover {
   background: rgba(255, 255, 255, 0.08);
   color: white;
   transform: translateY(-2px);
 }
-
+ 
 /* Contenedor de Tarjetas (Derecha) */
 .stats-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 16px;
   align-items: center;
 }
-
+ 
 .stat-card {
   background: rgba(255, 255, 255, 0.02);
   border: 1px solid rgba(255, 255, 255, 0.06);
@@ -346,13 +346,13 @@ body{
   justify-content: center;
   transition: .3s ease;
 }
-
+ 
 .stat-card:hover {
   transform: translateY(-5px);
   background: rgba(255, 255, 255, 0.04);
   border-color: rgba(255, 255, 255, 0.12);
 }
-
+ 
 /* Envoltorios de Iconos y Efectos Glow de la imagen */
 .stat-icon-wrapper {
   font-size: 1.8rem;
@@ -361,27 +361,27 @@ body{
   align-items: center;
   justify-content: center;
 }
-
+ 
 .folder-icon i { color: #5175ff; filter: drop-shadow(0 0 12px rgba(81, 117, 255, 0.5)); }
 .code-icon i { color: #00ffcc; filter: drop-shadow(0 0 12px rgba(0, 255, 204, 0.5)); }
 .cup-icon i { color: #ff3366; filter: drop-shadow(0 0 12px rgba(255, 51, 102, 0.5)); }
 .star-icon i { color: #ffcc00; filter: drop-shadow(0 0 12px rgba(255, 204, 0, 0.5)); }
-
+ 
 .stat-card h3 {
   font-size: 1.8rem;
   font-weight: 700;
   color: white;
   margin-bottom: 8px;
 }
-
+ 
 .stat-card p {
   color: #94a3b8;
   font-size: 0.85rem;
   line-height: 1.4;
 }
-
+ 
 /* SKILLS */
-
+ 
 .skills-card-wrapper {
   background: rgba(255, 255, 255, 0.02);
   border: 1px solid rgba(255, 255, 255, 0.05);
@@ -389,88 +389,150 @@ body{
   padding: 40px;
   backdrop-filter: blur(10px);
 }
-
+ 
 .skills-card-wrapper .section-title {
-  margin-bottom: 30px;
+  margin-bottom: 32px;
 }
-
-/* Fila única para las 6 tarjetas */
-.skills-container {
+ 
+/* Bloque por categoría */
+.skill-category {
+  margin-bottom: 0;
+}
+ 
+/* Etiqueta de categoría */
+.skill-category-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #8b5cf6;
+  background: rgba(139, 92, 246, 0.1);
+  border: 1px solid rgba(139, 92, 246, 0.22);
+  border-radius: 8px;
+  padding: 5px 12px;
+  margin-bottom: 18px;
+}
+ 
+.skill-category-label i {
+  font-size: 0.9rem;
+}
+ 
+/* Grid de tarjetas dentro de cada categoría */
+.skill-group {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 16px;
+  gap: 14px;
 }
-
-.skill-card {
+ 
+.skill-group--3 { grid-template-columns: repeat(3, 1fr); }
+.skill-group--2 { grid-template-columns: repeat(2, 1fr); }
+.skill-group--1 { grid-template-columns: 1fr; }
+ 
+/* Divisor entre categorías */
+.skill-divider {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.06);
+  margin: 28px 0;
+}
+ 
+/* Tarjeta de skill v2 */
+.skill-card-v2 {
   background: rgba(255, 255, 255, 0.02);
   border: 1px solid rgba(255, 255, 255, 0.06);
   border-radius: 16px;
-  padding: 20px 15px;
+  padding: 20px 18px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 14px;
   transition: .3s ease;
 }
-
-.skill-card:hover {
+ 
+.skill-card-v2:hover {
   transform: translateY(-4px);
   background: rgba(255, 255, 255, 0.04);
-  border-color: rgba(255, 255, 255, 0.12);
+  border-color: rgba(139, 92, 246, 0.3);
 }
-
-/* Alineación horizontal de Icono e Información */
-.skill-info {
+ 
+/* Tarjeta ancha (Git) — fila horizontal en desktop */
+.skill-card-v2--wide {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+ 
+.skill-card-v2--wide .skill-card-top {
+  flex-shrink: 0;
+}
+ 
+.skill-card-v2--wide .skill-tags {
+  justify-content: flex-end;
+}
+ 
+/* Parte superior: icono + nombre */
+.skill-card-top {
   display: flex;
   align-items: center;
-  gap: 12px;
-  margin-bottom: 15px;
+  gap: 14px;
 }
-
-.skill-icon {
-  font-size: 2.2rem;
+ 
+.skill-icon-v2 {
+  font-size: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.04);
+  flex-shrink: 0;
 }
-
-/* Colores personalizados y efectos de brillo (Glow) como en la imagen */
-.html-icon i { color: #e34f26; filter: drop-shadow(0 0 10px rgba(227, 79, 38, 0.4)); }
-.css-icon i { color: #1572b6; filter: drop-shadow(0 0 10px rgba(21, 114, 182, 0.4)); }
-.js-icon i { color: #f7df1e; filter: drop-shadow(0 0 10px rgba(247, 223, 30, 0.4)); }
-.python-icon i { color: #3776ab; filter: drop-shadow(0 0 10px rgba(55, 118, 171, 0.4)); }
-.git-icon i { color: #f05032; filter: drop-shadow(0 0 10px rgba(240, 80, 50, 0.4)); }
+ 
+/* Colores e iconos de cada tecnología */
+.html-icon i   { color: #e34f26; filter: drop-shadow(0 0 10px rgba(227, 79, 38, 0.45)); }
+.css-icon i    { color: #1572b6; filter: drop-shadow(0 0 10px rgba(21, 114, 182, 0.45)); }
+.js-icon i     { color: #f7df1e; filter: drop-shadow(0 0 10px rgba(247, 223, 30, 0.45)); }
+.react-icon i  { color: #61dafb; filter: drop-shadow(0 0 10px rgba(97, 218, 251, 0.45)); }
+.python-icon i { color: #4b9fd5; filter: drop-shadow(0 0 10px rgba(55, 118, 171, 0.45)); }
+.tkinter-icon i{ color: #a855f7; filter: drop-shadow(0 0 10px rgba(168, 85, 247, 0.45)); }
+.git-icon i    { color: #f05032; filter: drop-shadow(0 0 10px rgba(240, 80, 50, 0.45)); }
 .github-icon i { color: #ffffff; filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.4)); }
-
-.skill-text h3 {
+ 
+/* Nombre y descripción de la skill */
+.skill-card-info h3 {
   font-size: 0.95rem;
   font-weight: 600;
   color: white;
+  margin: 0 0 3px;
 }
-
-.skill-text p {
-  font-size: 0.8rem;
+ 
+.skill-card-info p {
+  font-size: 0.78rem;
+  color: #64748b;
+  margin: 0;
+  line-height: 1.4;
+}
+ 
+/* Tags de tecnologías */
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+ 
+.skill-tags span {
+  font-size: 0.7rem;
+  padding: 4px 10px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   color: #94a3b8;
-  margin-top: 2px;
 }
-
-/* Barras de progreso delgadas y elegantes */
-.progress {
-  width: 100%;
-  height: 5px;
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 10px;
-  overflow: hidden;
-}
-
-.progress span {
-  display: block;
-  height: 100%;
-  background: linear-gradient(90deg, #6366f1, #a855f7);
-  border-radius: 10px;
-}
-
+ 
 /* PROJECTS */
-
+ 
 .projects-card-wrapper {
   background: rgba(255, 255, 255, 0.02);
   border: 1px solid rgba(255, 255, 255, 0.05);
@@ -486,7 +548,7 @@ body{
     backdrop-filter: blur(10px);
     height: 83px;
 }
-
+ 
 /* Cabecera con alineación Flexbox */
 .projects-header {
   display: flex;
@@ -494,11 +556,11 @@ body{
   align-items: center;
   margin-bottom: 30px;
 }
-
+ 
 .projects-header .section-title {
   margin-bottom: 0; /* Reseteamos el margen inferior para alinear con el link */
 }
-
+ 
 /* Enlace "Ver todos los proyectos" */
 .view-all-link {
   color: #8b5cf6;
@@ -510,19 +572,19 @@ body{
   gap: 6px;
   transition: .3s ease;
 }
-
+ 
 .view-all-link:hover {
   color: #a855f7;
   gap: 10px; /* Pequeña animación de empuje al pasar el mouse */
 }
-
+ 
 /* Grid de proyectos */
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
 }
-
+ 
 .project-card {
   background: rgba(255, 255, 255, 0.01);
   border: 1px solid rgba(255, 255, 255, 0.06);
@@ -533,43 +595,43 @@ body{
   height: 100%;
   transition: .4s ease;
 }
-
+ 
 .project-card:hover {
   transform: translateY(-6px);
   border-color: rgba(255, 255, 255, 0.12);
   background: rgba(255, 255, 255, 0.03);
 }
-
+ 
 .project-img-wrapper {
   width: 100%;
   height: 200px;
   overflow: hidden;
 }
-
+ 
 .project-card img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: transform .5s ease;
 }
-
+ 
 .project-card:hover img {
   transform: scale(1.05); /* Efecto zoom suave en la imagen */
 }
-
+ 
 .project-content {
   padding: 24px;
   display: flex;
   flex-direction: column;
   flex-grow: 1; /* Hace que el contenido ocupe el espacio para alinear botones */
 }
-
+ 
 .project-content h3 {
   font-size: 1.2rem;
   font-weight: 600;
   color: white;
 }
-
+ 
 .project-content p {
   margin-top: 12px;
   color: #94a3b8;
@@ -577,7 +639,7 @@ body{
   line-height: 1.6;
   flex-grow: 1; /* Empuja las etiquetas y botones uniformemente hacia abajo */
 }
-
+ 
 /* Etiquetas redondeadas */
 .project-tags {
   display: flex;
@@ -585,7 +647,7 @@ body{
   margin-top: 20px;
   flex-wrap: wrap;
 }
-
+ 
 .project-tags span {
   padding: 6px 14px;
   background: rgba(124, 58, 237, 0.1);
@@ -595,14 +657,14 @@ body{
   font-size: 0.75rem;
   font-weight: 500;
 }
-
+ 
 /* Botones con estilo moderno e iconos independientes */
 .project-buttons {
   display: flex;
   gap: 12px;
   margin-top: 24px;
 }
-
+ 
 .project-buttons a {
   flex: 1;
   display: flex;
@@ -619,16 +681,16 @@ body{
   border: 1px solid rgba(255, 255, 255, 0.08);
   transition: .3s ease;
 }
-
+ 
 .project-buttons a:hover {
   background: rgba(255, 255, 255, 0.08);
   color: white;
   border-color: rgba(255, 255, 255, 0.2);
 }
-
+ 
 /* Github Activyti */
 /* GITHUB ACTIVITY */
-
+ 
 .github-card-wrapper {
   background: rgba(255, 255, 255, 0.02);
   border: 1px solid rgba(255, 255, 255, 0.05);
@@ -636,13 +698,13 @@ body{
   padding: 40px;
   backdrop-filter: blur(10px);
 }
-
+ 
 .github-grid {
   display: grid;
   grid-template-columns: 1.1fr 1.5fr 1.4fr;
   gap: 20px;
 }
-
+ 
 .github-subcard {
   background: rgba(255, 255, 255, 0.01);
   border: 1px solid rgba(255, 255, 255, 0.05);
@@ -651,26 +713,26 @@ body{
   display: flex;
   flex-direction: column;
 }
-
+ 
 .github-subcard h3 {
   font-size: 0.95rem;
   color: #cbd5e1;
   font-weight: 500;
   margin-bottom: 20px;
 }
-
+ 
 /* --- Columna 1: Perfil de Usuario --- */
 .profile-subcard {  
   height: 70%;
   margin-top: 31px;
 }
-
+ 
 .user-info {
   display: flex;
   align-items: center;
   gap: 15px;
 }
-
+ 
 .avatar-placeholder {
   width: 55px;
   height: 55px;
@@ -682,19 +744,19 @@ body{
   font-size: 1.8rem;
   color: #94a3b8;
 }
-
+ 
 .user-text h3 {
   font-size: 1.1rem;
   color: white;
   font-weight: 600;
   margin-bottom: 2px;
 }
-
+ 
 .user-text p {
   font-size: 0.8rem;
   color: #94a3b8;
 }
-
+ 
 .user-stats {
   display: flex;
   justify-content: space-between;
@@ -703,19 +765,19 @@ body{
   border-top: 1px solid rgba(255, 255, 255, 0.05);
   padding-top: 20px;
 }
-
+ 
 .stat-item h4 {
   font-size: 1.3rem;
   color: white;
   font-weight: 700;
 }
-
+ 
 .stat-item p {
   font-size: 0.75rem;
   color: #64748b;
   margin-top: 4px;
 }
-
+ 
 /* --- Columna 2: Heatmap --- */
 .months-labels {
   display: flex;
@@ -725,25 +787,25 @@ body{
   font-size: 0.75rem;
   color: #64748b;
 }
-
+ 
 .heatmap-grid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: 6px;
 }
-
+ 
 .heatmap-grid span {
   aspect-ratio: 1;
   border-radius: 3px;
 }
-
+ 
 /* Niveles de intensidad verdes de GitHub */
 .level-0 { background: rgba(255, 255, 255, 0.05); }
 .level-1 { background: #0e4429; }
 .level-2 { background: #006d32; }
 .level-3 { background: #26a641; }
 .level-4 { background: #39d353; }
-
+ 
 .heatmap-legend {
   display: flex;
   align-items: center;
@@ -753,51 +815,51 @@ body{
   font-size: 0.75rem;
   color: #64748b;
 }
-
+ 
 .heatmap-legend span:not(:first-child):not(:last-child) {
   width: 10px;
   height: 10px;
   border-radius: 2px;
 }
-
+ 
 /* --- Columna 3: Lenguajes --- */
 .lang-list {
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
-
+ 
 .lang-item {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 15px;
 }
-
+ 
 .lang-label {
   display: flex;
   align-items: center;
   gap: 10px;
   width: 90px;
 }
-
+ 
 .dot {
   width: 8px;
   height: 8px;
   border-radius: 50%;
 }
-
+ 
 .html-dot { background: #ff5733; }
 .css-dot { background: #6366f1; }
 .python-dot { background: #3b82f6; }
 .js-dot { background: #eab308; }
-
+ 
 .lang-name {
   font-size: 0.85rem;
   color: white;
   font-weight: 500;
 }
-
+ 
 .lang-bar-wrapper {
   flex: 1;
   height: 6px;
@@ -805,26 +867,26 @@ body{
   border-radius: 10px;
   overflow: hidden;
 }
-
+ 
 .lang-bar {
   height: 100%;
   border-radius: 10px;
 }
-
+ 
 .html-bar { background: linear-gradient(90deg, #ff5733, #ff8d73); }
 .css-bar { background: linear-gradient(90deg, #6366f1, #a855f7); }
 .python-bar { background: linear-gradient(90deg, #3b82f6, #60a5fa); }
 .js-bar { background: linear-gradient(90deg, #eab308, #fde047); }
-
+ 
 .lang-percentage {
   font-size: 0.85rem;
   color: #94a3b8;
   width: 35px;
   text-align: right;
 }
-
+ 
 /* CONTACT */
-
+ 
 .contact-card-wrapper {
   background: rgba(255, 255, 255, 0.02);
   border: 1px solid rgba(255, 255, 255, 0.05);
@@ -835,7 +897,7 @@ body{
   gap: 50px;
   backdrop-filter: blur(10px);
 }
-
+ 
 /* Columna Izquierda */
 .contact-left-col {
   display: flex;
@@ -843,22 +905,22 @@ body{
   justify-content: center;
   align-items: flex-start;
 }
-
+ 
 .contact-left-col .section-title {
   margin-bottom: 20px;
 }
-
+ 
 .contact-text p {
   line-height: 1.6;
   color: #cbd5e1;
   font-size: 0.95rem;
 }
-
+ 
 .contact-text p:first-child {
   font-weight: 500;
   color: white;
 }
-
+ 
 /* Botón "Envíame un mensaje" */
 .send-message-btn {
   display: inline-flex;
@@ -875,21 +937,21 @@ body{
   transition: .3s ease;
   margin-top: 25px;
 }
-
+ 
 .send-message-btn:hover {
   background: rgba(99, 102, 241, 0.2);
   border-color: rgba(99, 102, 241, 0.4);
   color: white;
   transform: translateY(-2px);
 }
-
+ 
 /* Contenedor de Tarjetas (Derecha) */
 .contact-cards-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 16px;
 }
-
+ 
 .social-contact-card {
   background: rgba(255, 255, 255, 0.02);
   border: 1px solid rgba(255, 255, 255, 0.06);
@@ -903,12 +965,12 @@ body{
   justify-content: center;
   transition: .3s ease;
 }
-
+ 
 .social-contact-card:hover {
   transform: translateY(-5px);
   background: rgba(255, 255, 255, 0.04);
 }
-
+ 
 /* Iconos y efectos Glow personalizados */
 .contact-icon {
   font-size: 2.2rem;
@@ -917,35 +979,35 @@ body{
   align-items: center;
   justify-content: center;
 }
-
+ 
 .github-glow .contact-icon i { color: #ffffff; filter: drop-shadow(0 0 12px rgba(255, 255, 255, 0.4)); }
 .linkedin-glow .contact-icon i { color: #0077b5; filter: drop-shadow(0 0 12px rgba(0, 119, 181, 0.5)); }
 .email-glow .contact-icon i { color: #a855f7; filter: drop-shadow(0 0 12px rgba(168, 85, 247, 0.5)); }
-
+ 
 .social-contact-card h3 {
   font-size: 1.05rem;
   font-weight: 600;
   color: white;
   margin-bottom: 6px;
 }
-
+ 
 .social-contact-card p {
   color: #64748b;
   font-size: 0.8rem;
   word-break: break-all; /* Evita que el correo largo rompa el diseño */
 }
-
+ 
 .social-contact-card:hover p {
   color: #94a3b8;
 }
-
+ 
 /* FOOTER */
-
+ 
 footer {
   margin-top: 80px;
   padding-bottom: 40px; /* Espacio inferior con respecto al borde del navegador */
 }
-
+ 
 .footer-card-wrapper {
   background: rgba(255, 255, 255, 0.02);
   border: 1px solid rgba(255, 255, 255, 0.05);
@@ -957,36 +1019,36 @@ footer {
   justify-content: space-between;
   align-items: center;
 }
-
+ 
 /* Logo */
 .footer-logo h3 {
   font-size: 1.5rem;
   font-weight: 900;
   color: white;
 }
-
+ 
 .footer-logo h3 span {
   color: #3b82f6; /* Color azul del punto en la captura */
 }
-
+ 
 /* Textos generales del footer */
 .footer-copy p,
 .footer-credits p {
   font-size: 0.85rem;
   color: #94a3b8;
 }
-
+ 
 .footer-credits span {
   display: inline-block;
   animation: pulse 1.5s infinite; /* Pequeña animación de latido para el corazón */
 }
-
+ 
 @keyframes pulse {
   0% { transform: scale(1); }
   50% { transform: scale(1.15); }
   100% { transform: scale(1); }
 }
-
+ 
 /* BOTÓN VOLVER ARRIBA */
 .scroll-top-btn {
   position: fixed;
@@ -1007,94 +1069,94 @@ footer {
   z-index: 99;
   transition: .3s ease;
 }
-
+ 
 .scroll-top-btn:hover {
   background: rgba(255, 255, 255, 0.1);
   border-color: rgba(255, 255, 255, 0.2);
   transform: translateY(-3px);
 }
 /* REACT ANIMATION */
-
+ 
 .animation-wrapper{
   position:relative;
   width:420px;
   height:420px;
-
+ 
   display:flex;
   align-items:center;
   justify-content:center;
 }
-
+ 
 .glow-circle{
   position:absolute;
-
+ 
   width:100%;
   height:100%;
-
+ 
   border:3px solid #8b5cf6;
-
+ 
   border-radius:40%;
-
+ 
   animation:float 6s ease-in-out infinite;
-
+ 
   box-shadow:
     0 0 40px #8b5cf6,
     0 0 80px #3b82f6;
 }
-
+ 
 .profile-image{
   width:340px;
   height:340px;
-
+ 
   object-fit:cover;
-
+ 
   border-radius:30px;
-
+ 
   z-index:2;
 }
-
+ 
 .floating-card{
   position:absolute;
-
+ 
   display:flex;
   align-items:center;
   gap:10px;
-
+ 
   padding:14px 18px;
-
+ 
   background:rgba(255,255,255,0.05);
-
+ 
   border:1px solid rgba(255,255,255,0.1);
-
+ 
   backdrop-filter:blur(15px);
-
+ 
   border-radius:15px;
-
+ 
   z-index:5;
 }
-
+ 
 .floating-card i{
   color:#8b5cf6;
 }
-
+ 
 @keyframes float{
-
+ 
   0%{
     border-radius:40%;
   }
-
+ 
   50%{
     border-radius:45%;
   }
-
+ 
   100%{
     border-radius:40%;
   }
-
+ 
 }
-
+ 
 /* RESPONSIVE */
-
+ 
 @media(max-width: 1024px) {
   .about-card-wrapper {
     grid-template-columns: 1fr;
@@ -1128,51 +1190,51 @@ footer {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-
+ 
 @media(max-width: 1200px) {
-  .skills-container {
-    grid-template-columns: repeat(3, 1fr); /* 3 columnas en pantallas medianas */
+  .skill-group--3 {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
-
+ 
 @media(max-width: 1100px) {
   .github-grid {
     grid-template-columns: 1fr; /* Pasa a ser una columna vertical en pantallas medianas */
     gap: 16px;
   }
 }
-
+ 
 @media(max-width:992px){
-
+ 
   .hero{
     grid-template-columns:1fr;
     text-align:center;
   }
-
+ 
   .hero p{
     margin:auto;
     margin-top:20px;
   }
-
+ 
   .hero-buttons{
     justify-content:center;
   }
-
+ 
   .socials{
     justify-content:center;
   }
-
+ 
   .about-grid,
   .projects-grid,
   .contact-grid,
   .skills-grid{
     grid-template-columns:1fr 1fr;
   }
-
+ 
 }
-
+ 
 @media(max-width:768px){
-
+ 
  .menu-btn{
     display:block;
     cursor:pointer;
@@ -1180,7 +1242,7 @@ footer {
     color:white;
     z-index:1001;
   }
-
+ 
   .nav-links{
     display:flex;
     flex-direction:column;
@@ -1198,13 +1260,13 @@ footer {
     transform:translateY(-20px);
     transition:.4s ease;
   }
-
+ 
   .nav-links.active{
     opacity:1;
     pointer-events:auto;
     transform:translateY(0);
   } 
-
+ 
   .animation-wrapper {
     width: 280px;   /* Bajamos de 420px a 280px para que entre en cualquier celular */
     height: 280px;
@@ -1217,12 +1279,12 @@ footer {
   .Developer2{
     width: 100%;
   }
-
+ 
  .hero h1{
     font-size: 2.6rem; 
     line-height: 1.2;
   }
-
+ 
   .about-grid,
   .projects-grid,
   .contact-grid,
@@ -1230,16 +1292,21 @@ footer {
   .stats{
     grid-template-columns:1fr;
   }
-  .skills-container {
-    grid-template-columns: repeat(2, 1fr); /* 2 columnas en tablets */
-    gap: 16px; 
-  }
   .skills-card-wrapper {
     padding: 25px;
-  }  
-  .skill-card {
-    padding: 15px 10px; /* Reducimos el padding interno */
-    text-align: center;
+  }
+  .skill-group--3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .skill-group--2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .skill-card-v2--wide {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .skill-card-v2--wide .skill-tags {
+    justify-content: flex-start;
   }
   .projects-header {
     flex-direction: column;
@@ -1270,9 +1337,9 @@ footer {
     width: 40px;
     height: 40px;
   }
-
+ 
 }
-
+ 
 @media(max-width: 480px) {
   .animation-wrapper {
     width: 240px;   
@@ -1282,11 +1349,12 @@ footer {
   .stats-container {
     grid-template-columns: 1fr;
   }
-  .skills-container {
-    grid-template-columns: 1fr; 
-  } 
+  .skill-group--3,
+  .skill-group--2 {
+    grid-template-columns: 1fr;
+  }
 }
-
+ 
 @media(max-width: 393px) {
   .animation-wrapper {
     width: 210px;   
@@ -1307,12 +1375,3 @@ footer {
     gap: 12px;
   } 
 }
-
-
-
-
-
-
-
-
-
