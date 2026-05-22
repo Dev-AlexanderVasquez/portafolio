@@ -1,12 +1,23 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+  <!-- MetaData -->
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
- 
-  <title>Alexander Vásquez | Portfolio</title>
- 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />  
+  <meta name="description" content="Portafolio profesional de Alexander Vásquez, desarrollador frontend y estudiante de Ingeniería de Software. Explora mis habilidades, tecnologías y proyectos." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Alexander Vásquez | Desarrollador Frontend & Software Engineer" />
+  <meta property="og:description" content="Portafolio profesional de Alexander Vásquez. Proyectos de desarrollo de software, aplicaciones React y backend en Python con estándares internacionales." />
+  <meta property="og:image" content="img/Proyects/swapfy.jpg" /> <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:title" content="Alexander Vásquez | Desarrollador Frontend" />
+  <meta property="twitter:description" content="Explora mis proyectos de software y desarrollo web adaptados a estándares modernos y globales." />
+  
+  <!-- Title -->
+  <title>Alexander Vásquez | Desarrollador Frontend & Software Engineer</title>
+
+  <!-- favicon -->
   <link rel="icon" type="image/png" href="img/icons/AV-favicon.png" />
+
   <!-- CSS -->
   <link rel="stylesheet" href="css/style.css" />
  
@@ -28,6 +39,39 @@
  
   <!-- Babel -->
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Alexander Felipe Vásquez Roncal",
+      "jobTitle": "Software Engineer & Frontend Developer",
+      "url": "https://dev-alexandervasquez.github.io/portafolio/",
+      "email": "dev.alexander.vasquez@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Lima",
+        "addressRegion": "Lima",
+        "addressCountry": "PE"
+      },
+      "colloquialToken": "Desarrollador Frontend Perú",
+      "knowsAbout": [
+        "Software Engineering",
+        "Frontend Development",
+        "React",
+        "JavaScript ES6+",
+        "Python",
+        "Web Design"
+      ],
+      "alumniOf": {
+        "@type": "EducationalOrganization",
+        "name": "Universidad Peruana de Ciencias Aplicadas"
+      },
+      "sameAs": [
+        "https://github.com/Dev-AlexanderVasquez",
+        "https://www.linkedin.com/in/vasquez-alexander"
+      ]
+    }
+  </script>
 </head>
  
 <body>
@@ -38,9 +82,9 @@
   <!-- Navbar -->
   <header class="navbar">
  
-    <div class="logo">
-    <h3>AV<span>.</span></h3>
-  </div>  
+    <div class="logo">    
+      <strong>AV<span>.</span></strong>
+    </div>  
  
   <nav class="nav-links">
     <a href="#home">Inicio</a>
@@ -74,9 +118,9 @@
         <span>Vásquez</span>
       </h1>
  
-      <h3>
+      <h2>
         Estudiante de Ingeniería de Software
-      </h3>
+      </h2>
  
       <p>
         Me apasiona crear experiencias web modernas,
@@ -139,7 +183,7 @@
         
         <div class="about-text">
           <p>
-            Soy estudiante de Ingeniería de Software en Universidad Peruana de Ciencias Aplicadas
+            Soy estudiante de Ingeniería de Software en Universidad Peruana de Ciencias Aplicadas Lima, Peru
             (actualmente en mi 5to ciclo). Me apasiona el desarrollo web y el diseño de interfaces modernas, combinando la rigurosidad de la ingeniería con la creatividad del frontend.
           </p>
           <p>
@@ -359,7 +403,7 @@
           <div class="project-img-wrapper">
             <img
               src="img/Proyects/swapfy.jpg"
-              alt="Swapfy Solutions"
+              alt="Landing page interactiva de Swapfy Solutions"
             />
           </div>
  
@@ -387,7 +431,7 @@
           <div class="project-img-wrapper">
             <img
               src="img/Proyects/InkaGo.png"
-              alt="InkaGo Components"
+              alt="Aplicación de optimización de rutas médicas InkaGo"
             />
           </div>
  
@@ -415,7 +459,7 @@
           <div class="project-img-wrapper">
             <img
               src="img/Proyects/Huffman.jpeg"
-              alt="Task Manager App"
+              alt="Interfaz gráfica de compresión con Algoritmo de Huffman en Python"
             />
           </div>
  
